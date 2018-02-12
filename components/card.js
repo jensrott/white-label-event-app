@@ -32,13 +32,16 @@ const styles = StyleSheet.create({
   cardPresenter: {},
 });
 
+const date = new Date();
+let timeStamp = date.getDay() + ':' + date.getMonth() + 1 + ':' + ':' + date.getFullYear();
+
 const Card = props => (
   <View style={styles.cardContainer}>
     <View style={styles.profileContainer}>
       <Text style={styles.cardTitle}>React Native & Firebase workshop!</Text>
-      <Text style={styles.cardTimeStamp}>{}</Text>
+      <Text style={styles.cardTimeStamp}>Current data: {timeStamp}</Text>
       <Image style={styles.cardPersonImage} uri={'http://lorempixel.com/200/200/cats/'} />
-      <Text style={styles.cardPresenter} />
+      <Text style={styles.cardPresenter}></Text>
     </View>
     <View style={styles.infoContainer}>
       <Switch disabled="true" />
