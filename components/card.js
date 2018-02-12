@@ -3,17 +3,16 @@ import { ImageBackground, StatusBar, Image, StyleSheet } from 'react-native';
 import { Switch } from 'react-native-elements';
 
 const styles = StyleSheet.create({
-
-	/* Containers */
+  /* Containers */
   cardContainer: {
-		backgroundColor: '#000',
-	},
-	
-	profileContainer: {},
+    backgroundColor: '#000',
+  },
 
-	infoContainer: {},
+  profileContainer: {},
 
-	/* Other Styling */
+  infoContainer: {},
+
+  /* Other Styling */
   cardTitle: {
     fontSize: 50,
     fontWeight: 'bold',
@@ -41,9 +40,9 @@ const Card = props => (
       <Image style={styles.cardPersonImage} uri={'http://lorempixel.com/200/200/cats/'} />
       <Text style={styles.cardPresenter} />
     </View>
-		<View style={styles.infoContainer}>
-			<Switch disabled='true' />
-		</View>
+    <View style={styles.infoContainer}>
+      <Switch disabled="true" />
+    </View>
   </View>
 );
 
